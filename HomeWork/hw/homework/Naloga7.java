@@ -3,7 +3,18 @@ package homework;
 public class Naloga7 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
+		String vneseniNiz = args[0];
+		String obratniNiz = "";
+		
+		
+		for(int i = vneseniNiz.length()-1; i >=0; i--) 
+			obratniNiz += vneseniNiz.charAt(i);
+		
+		String palindrom  = vneseniNiz.equals(obratniNiz) ? "niz JE palindrom" : "niz NI palindrom";
+		
+		System.out.println(palindrom);
+		
 
 	}
 
