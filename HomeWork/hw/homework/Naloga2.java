@@ -1,3 +1,4 @@
+package homework;
 import java.util.Arrays;
 
 public class Naloga2 {

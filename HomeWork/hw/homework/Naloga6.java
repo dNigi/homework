@@ -1,3 +1,4 @@
+package homework;
 public class Naloga6 {
 	public static void main(String[] args) {
 

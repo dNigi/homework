@@ -1,3 +1,4 @@
+package homework;
 
 public class Naloga1 {
 
@@ -5,7 +6,7 @@ public class Naloga1 {
 		
 /*
  * 	Naloga 1
- * 	Napiši program, ki bo izračunal in izpisal rezultata račinov: 
+ * 	Napiši program, ki bo izra�?unal in izpisal rezultata ra�?inov: 
  * 	1.) (10 + 5) / 3 = ?
  * 	2.) (22+99) * (113/14) 
  */	

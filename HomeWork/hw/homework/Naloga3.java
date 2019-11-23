@@ -1,3 +1,4 @@
+package homework;
 import java.text.DecimalFormat;
 
 public class Naloga3 {
