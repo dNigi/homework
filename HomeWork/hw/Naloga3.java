@@ -1,33 +1,30 @@
+import java.text.DecimalFormat;
+
 public class Naloga3 {
+	static final double PI = 3.141592653589;
+	
+	public static void main(String[] args) {
+		
+		DecimalFormat dveDecimalke = new DecimalFormat("0.##");
 
-public static void main(String[] args) {
-	
-	final double PI = 3.141592653589;
-	
-	/*
-	 * Program naj sprejme en parameter tipa double.
-	 *  Podani argument predstavlja premer kroga.
-	 *   Program naj izracuna in izpise obseg in ploscino kroga.
-	 *    Za pi uporabi vrednost 3,141592653589.
-	 */
-	
-	double premerKroga = 10;
-	double polmerKroga = premerKroga / 2;
-	
-	//Obseg kroga ::>
-	double obsegKroga = premerKroga * PI;
-	
+		double premerKroga = Double.parseDouble(args[0]);
+		
+		double polmerKroga = premerKroga / 2;
+		double obsegKroga = premerKroga * PI;
 
-	
-	double kvadratPolmera = Math.pow(polmerKroga, 2);
-	double ploscinaKroga = kvadratPolmera * PI;
-	
-	System.out.println(ploscinaKroga);
-	
-	
-	
-	
-	
-}
+
+		double kvadratPolmera = Math.pow(polmerKroga, 2);
+		double ploscinaKroga = kvadratPolmera * PI;
+		
+		
+
+		System.out.println("Premer kroga "+ premerKroga+" ima obseg "+dveDecimalke.format(obsegKroga)+
+				"\nNjegova ploscina znasa "+ dveDecimalke.format(ploscinaKroga));
+
+		
+		
+	}
+
 
 }
+
