@@ -3,9 +3,21 @@ package homework;
 public class Naloga11 {
 
 	public static void main(String[] args) {
-		
-		int mesec = 1;
-		
+
+		int mesec = 0;
+
+		while(true) {
+			try {
+				mesec = Integer.parseInt(args[0]);
+				break;
+			}
+			catch (Exception e) {
+				System.out.println("Vnesena vrednost ni stevilo.");
+				break;
+				}
+		}
+
+
 		switch (mesec) {
 		case 1:
 			System.out.println("Januar");
