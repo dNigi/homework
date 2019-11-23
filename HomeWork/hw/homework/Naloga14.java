@@ -26,7 +26,7 @@ public class Naloga14 {
 				if(twoDimensional[i][j] % 7 == 0){
 					System.out.println(twoDimensional[i][j] +" je deljivo s 7");
 				}
-			}
+			} 
 		}
 
 		int temp = 0;
