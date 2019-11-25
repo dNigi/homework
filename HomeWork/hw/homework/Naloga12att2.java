@@ -8,6 +8,8 @@ public class Naloga12att2 {
 		String input = "123456";
 		
 		//Turn string to INT, calculate first 3 + last 3
+		
+		Integer.parseInt(input);
 
 	
 	}
