@@ -7,6 +7,8 @@ public class Naloga12 {
 		
 		String vnos = "123456";
 		
+		/*
+		
 		try {
 			
 			int vnosInt = Integer.parseInt(vnos);
@@ -23,6 +25,16 @@ public class Naloga12 {
 		
 		else {
 			System.out.println("Nisi vnesel 6 stevilk");
+		}
+		
+		*/
+		
+		char[] vnosToArray = vnos.toCharArray();
+		
+
+
+		for (int i = 0; i < vnosToArray.length; i++) {
+			System.out.println(vnosToArray[i]);
 		}
 		
 		
