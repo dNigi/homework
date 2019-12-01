@@ -4,48 +4,25 @@ public class Naloga12 {
 
 	public static void main(String[] args) {
 		
-		
-		String vnos = "123456";
-		
-		/*
-		
-		try {
+		String input = args[0];
+				
+		if(input.length() != 6) {
+			System.out.println("Stevilo ne ustreza pogojem");
+		}
+		else {			
+			System.out.println("Vneseno stevilo ("+ input+") razdelimo na dva dela \n"+ input.substring(0,3) +" in "+ input.substring(3,6));
+			System.out.println("Rezultat je:");
+			rez(input);			
 			
-			int vnosInt = Integer.parseInt(vnos);
-		}
-		catch (Exception e) {
-			System.out.println("Vnos ni stevilo");
-		}
-		
-		
-		
-		if(vnos.length() == 6) {
-			System.out.println("moze");
-		}
-		
-		else {
-			System.out.println("Nisi vnesel 6 stevilk");
-		}
-		
-		*/
-		
-		char[] vnosToArray = vnos.toCharArray();
-		
-
-
-		for (int i = 0; i < vnosToArray.length; i++) {
-			System.out.println(vnosToArray[i]);
-		}
-		
-		
-		
-		
-		
-		
-		
-		
-
+		}	
+	}
 	
+	public static void rez(String vnos) {
+		
+		int prviDel = Integer.parseInt(vnos.substring(0,3));
+		int drugiDel = Integer.parseInt(vnos.substring(3,6));
+		System.out.print(prviDel+drugiDel);
+		
 	}
 
 }
