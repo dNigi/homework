@@ -1,45 +1,69 @@
 package homework;
 
+
+import java.util.Arrays;
 public class Naloga16 {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
+
+		//Program naj sešteje in izpiše vrednost posameznih vrstic tabele.
+		//Program naj sešteje in izpiše vrednost posameznih stolpcev tabele.
+
+		int steviloVrstic = 3;
+		int steviloStoplov = 3;
+		int vrednostVsehStevil = 0;
+
+		int vrednostVrstic = 0;
+		int vrednostStoplov = 0;
+
+
+		int[][] userTable = new int[steviloVrstic][steviloStoplov];
+
+		//<H:  Napolni in izpisi tabelo  :H>\\		
+		for(int i = 0; i < userTable.length; i++) {
+
+			for(int j = 0; j < userTable[i].length; j++) {
+
+				userTable[i][j] = (int) (Math.random()*1+1);
+				vrednostVsehStevil += userTable[i][j];
+				System.out.print(userTable[i][j]+"\t");						
+			}			
+			System.out.println(" ");
+		}		
+
+		System.out.print("Vrednost vseh stevil: " + vrednostVsehStevil);		
+
+		//		String vrednost = Integer.toString(vrednostVsehStevil);//		
+		//		char[] charVrednost = vrednost.toCharArray();
+		//		for (char c : charVrednost) {
+		//			System.out.print(c);
+		//		}		
+		System.out.println("\n\n");
 		
-//Program naj sešteje in izpiše vrednost posameznih vrstic tabele.
-//Program naj sešteje in izpiše vrednost posameznih stolpcev tabele.
+		int[] tempRows = new int[userTable.length];
 		
-		
-		int vnos1 = 3;
-		int vnos2 = 3;
-		
-		int[][] userTable = new int[vnos1][vnos2];
-		
-		
-		//::> NAPOLNI TABLELO / IZPISI TABELO
-		for (int i = 0; i < userTable.length; i++) {
+		for(int i = 0; i < userTable.length; i++) {
 			
 			for(int j = 0; j < userTable[i].length; j++) {
 				
-				userTable[i][j] = (int) (Math.random()*3+1);
-				
-				System.out.print(userTable[i][j] + " ");
+				tempRows[i] = userTable[j][i];
 			}
-				System.out.println("");
+			
+			
 		}
-		
-		System.out.println("Prva vrsta:\n");
-		
-		for(int i = 0; i < userTable.length;i++) {
-			System.out.println(userTable[i][0]);
-		}
+		System.out.println(Arrays.toString(tempRows));
 		
 		
-		System.out.println("Prvi column:\n");
-		
-		for(int i = 0; i < userTable.length;i++) {
-			System.out.println(userTable[0][i]);
-		}
 
-	
+
+		
+
+		
+
+
+		
+
+
 	}
 
 }
