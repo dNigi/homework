@@ -17,7 +17,7 @@ public class Naloga11 {
 				}
 		}
 
-
+		
 		switch (mesec) {
 		case 1:
 			System.out.println("Januar");
