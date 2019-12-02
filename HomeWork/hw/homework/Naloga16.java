@@ -37,7 +37,7 @@ public class Naloga16 {
 		//		char[] charVrednost = vrednost.toCharArray();
 		//		for (char c : charVrednost) {
 		//			System.out.print(c);
-		//		}		
+		//		}		 
 		System.out.println("\n\n");
 		
 		int[] tempRows = new int[userTable.length];
