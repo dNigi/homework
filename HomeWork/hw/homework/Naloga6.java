@@ -10,8 +10,10 @@ public class Naloga6 {
 
 		if(vneseniNiz.length() > 2) 
 			predZadnjaCrka = vrniPredzadnjo(vneseniNiz);
-		else
+		else {
 			System.out.println("Niz ima manj kot 2 crke");
+			System.exit(0);
+		}
 
 		if(vneseniNiz.length() > 2) 
 			drugaCrka = vrniDrugo(vneseniNiz);
