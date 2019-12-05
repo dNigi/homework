@@ -4,45 +4,65 @@ import java.util.Arrays;
 
 public class Naloga17 {
 
+	static Scanner sc = new Scanner(System.in);
+
 	public static void main(String[] args) {
-		
-//		V programu definiraj tabelo String[][] naključne velikosti med 1 in 5 (Math.random()).
-//      Program naj uporabnika vpraša naj vnese niz za vsako celico tabele.
-//		Program naj nato tabelo izpiše.
-		
-		Scanner sc = new Scanner(System.in);
-		
-//		int rdm1 = (int) (Math.random()*2+1);		
-//		int rdm2 = (int) (Math.random()*2+1);		
-		
-		int rdm1 = 2;
-		int rdm2 = 2;
-		
+		int rdm1 = (int) (Math.random()*5+1);		
+		int rdm2 = (int) (Math.random()*5+1);
+
 		String[][] tabela = new String[rdm1][rdm2];
 
+
 		
-		for (int i = 0; i < tabela.length; i++) {
-			for (int j = 0; j < tabela[i].length; j++) {
-				
-				System.out.print("vpisi stevilko: ");
-				tabela[i][j] += sc.nextLine();
+		boolean ponovniVpis = true;
 		
-			}
-			System.out.println("\nDrugiArray\n");
-		}
-		
-		for(int i = 0; i < tabela.length; i++) {
+		while(ponovniVpis) {
 			
-			for(int j = 0; j < tabela[i].length; j++) {
-				
-				System.out.print("x "+tabela[i][j]+ " ");
-				
+			polnjeneTabele(tabela);
+			izpisTabele(tabela);
+			System.out.println("Vpisi \" konec\" za izhod iz programa");
+			String response = sc.nextLine();
+			
+			if( response.equalsIgnoreCase("konec")){
+				System.exit(0);
 			}
-			System.out.println("");
+			
 		}
-		
 
 
+
+	}//::>END MAIN
+
+	//	>> METODE <<
+	public static void polnjeneTabele(String[][] arr) {
+
+		for (int i = 0; i < arr.length; i++) {			
+			for (int j = 0; j < arr[i].length; j++) {
+
+				System.out.print("Vpisi Niz: ");
+				arr[i][j] = sc.nextLine();									
+			}
+
+			System.out.println("\n  *********** \n");
+
+		}
 	}
 
-}
+
+	public static void izpisTabele(String[][] arr) {
+
+		for (int i = 0; i < arr.length; i++) {
+
+			for (int j = 0; j < arr[i].length; j++) {
+				System.out.print(arr[i][j]+" ");				
+			}
+			System.out.println("");			
+		}
+	}
+
+
+}//::>END CLASS
+
+
+
+
