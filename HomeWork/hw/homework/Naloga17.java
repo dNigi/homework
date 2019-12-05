@@ -1,8 +1,9 @@
 package homework;
 import java.util.Scanner;
-import java.util.Arrays;
 
 public class Naloga17 {
+	
+	//NEEDS A TRYCATCH for RESPONSE (LINE 25)
 
 	static Scanner sc = new Scanner(System.in);
 
