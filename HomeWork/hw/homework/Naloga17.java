@@ -12,20 +12,21 @@ public class Naloga17 {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		int rdm1 = (int) (Math.random()*5+1);		
-		int rdm2 = (int) (Math.random()*5+1);
-		String vnos = "";
+//		int rdm1 = (int) (Math.random()*2+1);		
+//		int rdm2 = (int) (Math.random()*2+1);		
+		
+		int rdm1 = 2;
+		int rdm2 = 2;
 		
 		String[][] tabela = new String[rdm1][rdm2];
+
 		
 		for (int i = 0; i < tabela.length; i++) {
 			for (int j = 0; j < tabela[i].length; j++) {
 				
 				System.out.print("vpisi stevilko: ");
-				vnos = sc.nextLine();
-				
-				vnos += tabela[i][j];			
-				
+				tabela[i][j] += sc.nextLine();
+		
 			}
 			System.out.println("\nDrugiArray\n");
 		}
@@ -34,8 +35,10 @@ public class Naloga17 {
 			
 			for(int j = 0; j < tabela[i].length; j++) {
 				
-				System.out.println(tabela[i][j]);
+				System.out.print("x "+tabela[i][j]+ " ");
+				
 			}
+			System.out.println("");
 		}
 		
 
