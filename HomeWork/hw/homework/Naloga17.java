@@ -11,8 +11,6 @@ public class Naloga17 {
 		int rdm2 = (int) (Math.random()*5+1);
 
 		String[][] tabela = new String[rdm1][rdm2];
-
-
 		
 		boolean ponovniVpis = true;
 		
