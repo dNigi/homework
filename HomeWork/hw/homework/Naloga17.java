@@ -28,7 +28,7 @@ public class Naloga17 {
 			
 		}
 
-
+ 
 
 	}//::>END MAIN
 
