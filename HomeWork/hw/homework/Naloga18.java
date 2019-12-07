@@ -23,19 +23,19 @@ class Naloga18{
        
     }
     
-    public static int odstevanje(int prvoStevilo, int drugoStevilo) { 
-        System.out.print("Vnesi prvo stevilo: ");
-        int prvoStevilo = Integer.parseInt(vhod.readLine());
-        
-        System.out.println("Vnesi drugo stevilo: ");
-        double drugoStevilo = Double.parseDouble(vhod.readLine());
-        
-    	return prvoStevilo - drugoStevilo;    	
-    }
-    
-    public static int mnozenje(int prvoStevilo, int drugoStevilo) {
-    	return prvoStevilo * drugoStevilo;
-    }
-    
-    
+//    public static int odstevanje(int prvoStevilo, int drugoStevilo) { 
+//        System.out.print("Vnesi prvo stevilo: ");
+//        int prvoStevilo = Integer.parseInt(vhod.readLine());
+//        
+//        System.out.println("Vnesi drugo stevilo: ");
+//        double drugoStevilo = Double.parseDouble(vhod.readLine());
+//        
+//    	return prvoStevilo - drugoStevilo;    	
+//    }
+//    
+//    public static int mnozenje(int prvoStevilo, int drugoStevilo) {
+//    	return prvoStevilo * drugoStevilo;
+//    }
+//    
+//    
 }
