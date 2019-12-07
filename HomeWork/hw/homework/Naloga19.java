@@ -3,18 +3,10 @@ package homework;
 public class Naloga19 {
 
 	public static void main(String[] args) {
+		
 		int[] tabela = new int[155];
 		int[] drugaTabela = new int[17];
-		
-		/*
-		for(int i = 0; i < tabela.length; i ++) {
-			tabela[i] = (int) (Math.random() * 200);
-		}
-		for(int i = 0; i < drugaTabela.length; i ++) {
-			drugaTabela[i] = (int) (Math.random() * 200);
-		}
-		*/
-		
+
 		tabela = napolniTabelo(tabela.length, 200);
 		drugaTabela = napolniTabelo(drugaTabela.length, 10);
 		
@@ -31,11 +23,17 @@ public class Naloga19 {
 		}
 		
 		return tab;		
-	}
-	
-	public static void izpisiTabelo(int[] tab) {
+	}	
+	public static void izpisiTabelo(int[] tab) {		
+		int zadnja = tab[tab.length - 1];
+		
 		for(int i = 0; i < tab.length; i++) {
-			System.out.print(tab[i] + ", ");
+			if(tab[i] != zadnja) {
+				System.out.print(tab[i]+", ");
+			}
+			else {
+				System.out.println(zadnja);
+			}
 		}
 		System.out.println("");
 	}
