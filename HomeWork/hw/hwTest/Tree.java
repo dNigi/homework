@@ -4,18 +4,27 @@ import java.util.Scanner;
 
 public class Tree {
 
-	public static void main(String[] args) throws InterruptedException {
+	public static void main(String[] args) throws InterruptedException  {
 		
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("Visina trikoitnika?");
-		int rows = sc.nextInt() - 1;
-				
+		int visina = sc.nextInt() - 1;		
 		
-		for (int i = 0; i <= rows; i++) {
+		jelka(visina);
+	
+		sc.close();
+
+	}	
+	
+	public static void jelka(int visina) throws InterruptedException {
+		
+		System.out.println("Visina trikoitnika?");
+		
+		for (int i = 0; i <= visina; i++) {
 			
 			
-			for (int j = rows; j > i; j--) {
+			for (int j = visina; j > i; j--) {
 				System.out.print(" ");
 			}
 			
@@ -27,20 +36,21 @@ public class Tree {
 				System.out.print("*");
 			}
 			
-			Thread.sleep(220);
-			
+			Thread.sleep(220);			
 			System.out.println("");
 			
-		}
-		sc.close();
+		}		
 		
-		System.out.println("Za");
-		Thread.sleep(320);
-		System.out.println("Misev");
-		Thread.sleep(320);
-		System.out.println("BIRZDEJ ki ima "+ rows + "let!!");
+		for (int i = 0; i < 2; i++) {
+			
+			for (int j = 0; j < visina-1; j++) {
+				System.out.print(" ");
+			}
+			
+			System.out.println("***");
 
-	
+		}
+		
 	}
 
 }
