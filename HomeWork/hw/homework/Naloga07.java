@@ -1,6 +1,6 @@
 package homework;
 
-public class Naloga7 {
+public class Naloga07 {
 
 	public static void main(String[] args) {
 		

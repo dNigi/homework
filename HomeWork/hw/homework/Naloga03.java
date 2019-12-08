@@ -1,7 +1,7 @@
 package homework;
 import java.text.DecimalFormat;
 
-public class Naloga3 {
+public class Naloga03 {
 	static final double PI = 3.141592653589;
 	
 	public static void main(String[] args) {

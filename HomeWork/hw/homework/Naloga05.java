@@ -1,5 +1,5 @@
 package homework;
-public class Naloga5 {
+public class Naloga05 {
 
 	public static void main(String[] args) {
 		

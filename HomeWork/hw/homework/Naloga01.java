@@ -1,12 +1,12 @@
 package homework;
 
-public class Naloga1 {
+public class Naloga01 {
 
 	public static void main(String[] args) {
 		
 /*
  * 	Naloga 1
- * 	NapiÅ¡i program, ki bo izraÄ?unal in izpisal rezultata raÄ?inov: 
+ * 	NapiÅ¡i program, ki bo izraï¿½?unal in izpisal rezultata raï¿½?inov: 
  * 	1.) (10 + 5) / 3 = ?
  * 	2.) (22+99) * (113/14) 
  */	

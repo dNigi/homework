@@ -1,25 +1,43 @@
 package homework;
-
-
 public class Naloga06 {
-	
-	public static void main(String args[]) {
-		/* MAIN */
-		
-		String str = args[0];
-		
-		char nakljucenZnak = str.charAt( (int) (Math.random()*str.length() ) );
-		
-		System.out.println("");
-		System.out.println("Vneseni niz je: " +str);
-		System.out.println("Nakljucna crka niza je: " + nakljucenZnak);
-		System.out.println("Druga crka niza je: " + str.charAt(1) );
-		System.out.println("Predzadnja crka niza je: " + str.charAt(str.length()-2)+"\n");
-		
-		/* MAIN - konec */
+	public static void main(String[] args) {
+
+		String vneseniNiz = args[0];
+
+		char nakljucnaCrka = vrniNakljucno(vneseniNiz);
+		char drugaCrka = ' ';
+		char predZadnjaCrka = ' ';
+
+		if(vneseniNiz.length() > 2) 
+			predZadnjaCrka = vrniPredzadnjo(vneseniNiz);
+		else {
+			System.out.println("Niz ima manj kot 2 crke");
+			System.exit(0);
 		}
-	
-		/* METODE */
-		
-	
+
+		if(vneseniNiz.length() > 2) 
+			drugaCrka = vrniDrugo(vneseniNiz);
+
+		else 
+			System.out.println("Niz ima manj kot 2 crke");
+
+		System.out.println("Vneseni niz: "+vneseniNiz);
+		System.out.println("Nakljucna crka: " + nakljucnaCrka);
+		System.out.println("Druga crka: " + drugaCrka);
+		System.out.println("Predzadnja crka: " + predZadnjaCrka);
+	}	
+
+
+	public static char vrniDrugo(String x) {		
+		return x.charAt(1);					
+	}
+
+	public static char vrniNakljucno(String x) {
+		return x.charAt((int) (Math.random()* x.length()));
+	}
+
+	public static char vrniPredzadnjo(String x) {
+		return x.charAt(x.length()-2);	
+	}
+
 }

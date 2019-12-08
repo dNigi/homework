@@ -1,7 +1,7 @@
 package homework;
 import java.util.Calendar;
 
-public class Naloga4 {
+public class Naloga04 {
 
 	public static void main(String[] args) {
 

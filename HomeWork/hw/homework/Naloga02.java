@@ -1,7 +1,7 @@
 package homework;
 import java.util.Arrays;
 
-public class Naloga2 {
+public class Naloga02 {
 
 	public static void main(String[] args) {		
 
