@@ -1,41 +1,41 @@
 package homework;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.util.Scanner;public class Naloga18 {
 
+    public static void main(String[] args) {
 
-class Naloga18{
-    public static void main(String[] args) throws IOException {
-        BufferedReader vhod = 
-                    new BufferedReader(new InputStreamReader(System.in));
-      
-       System.out.print("Vnesi prvo stevilo: ");
-       int prvoStevilo = Integer.parseInt(vhod.readLine());
-       
-       System.out.println("Vnesi drugo stevilo: ");
-       double drugoStevilo = Double.parseDouble(vhod.readLine());
+        Scanner sc = new Scanner(System.in);
 
-       double rezultat = prvoStevilo + drugoStevilo;
+        System.out.print("Vnesi prvo stevilo: ");
+        Double prvoStevilo = Double.parseDouble(sc.nextLine());
 
-       System.out.println("Sestevek obeh stevil je " + rezultat);
-       
-       
+        System.out.print("Vnesi drugo stevilo: ");
+        Double drugoStevilo = Double.parseDouble(sc.nextLine());
+
+        System.out.println("\n");
+
+        System.out.println("1 - Sestej");
+        System.out.println("2 - Odstej");
+        System.out.println("3 - Zmnozi");
+        System.out.println("4 - Deli");
+        System.out.println("//a");
+        System.out.println("////");
+
+        System.out.println("Izberi zeleno operacijo: ");
+        int ukaz = Integer.parseInt(sc.nextLine());
+
+        double rezultat = 0.0;
+
+        switch(ukaz) { 
+            case 1:
+                rezultat = prvoStevilo + drugoStevilo;
+                break;   
+            default:
+                System.out.println("Vnesen neveljaven ukaz");
+                System.exit(0);
+        }
+
+        System.out.println("Rezultat : " + rezultat);
+        sc.close();
     }
-    
-//    public static int odstevanje(int prvoStevilo, int drugoStevilo) { 
-//        System.out.print("Vnesi prvo stevilo: ");
-//        int prvoStevilo = Integer.parseInt(vhod.readLine());
-//        
-//        System.out.println("Vnesi drugo stevilo: ");
-//        double drugoStevilo = Double.parseDouble(vhod.readLine());
-//        
-//    	return prvoStevilo - drugoStevilo;    	
-//    }
-//    
-//    public static int mnozenje(int prvoStevilo, int drugoStevilo) {
-//    	return prvoStevilo * drugoStevilo;
-//    }
-//    
-//    
 }
