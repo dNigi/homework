@@ -4,15 +4,10 @@ import java.util.Scanner;
 
 public class Naloga16 {	
 
-	//addCommit
-	//Program naj sešteje in izpiše vrednost posameznih vrstic tabele.
-	//Program naj sešteje in izpiše vrednost posameznih stolpcev tabele.
-
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
 
-		// >>>>>>>>>>>>>SPREMENI V SCANNER NEWLINE <<<<<<<<<<<<<<<
 		System.out.println("Vnesi stevilo vrstic");		
 		int vnos1 = sc.nextInt();
 		System.out.println("Vnesi stevilo stolpov");
@@ -83,7 +78,7 @@ public class Naloga16 {
 	
 	public static void sestejStolpe(int[][]arr) {
 		
-		for (int i = 0; i < arr.length; i++) {
+		for (int i = 0; i < arr[0].length; i++) {
 			
 			//RESET
 			int sum = 0;
