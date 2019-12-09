@@ -21,6 +21,7 @@ public class Naloga16 {
 		sestejVrste(arr);
 		System.out.println();
 		sestejStolpe(arr);
+		sc.close();
 
 
 	}
