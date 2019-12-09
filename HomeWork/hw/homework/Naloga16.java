@@ -1,15 +1,19 @@
 package homework;
 
+import java.util.Scanner;
+
 public class Naloga16 {	
 
 	//Program naj sešteje in izpiše vrednost posameznih vrstic tabele.
 	//Program naj sešteje in izpiše vrednost posameznih stolpcev tabele.
 
 	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
 
 		// >>>>>>>>>>>>>SPREMENI V SCANNER NEWLINE <<<<<<<<<<<<<<<
-		int vnos1 = 3;
-		int vnos2  = 3;		
+		int vnos1 = sc.nextInt();
+		int vnos2  = sc.nextInt();		
 
 		int[][] arr = new int[vnos1][vnos2];
 
@@ -26,15 +30,19 @@ public class Naloga16 {
 	public static void fillArray(int[][] arr) {
 		for (int i = 0; i < arr.length; i++) {
 			for (int j = 0; j < arr[i].length; j++) {
-				// >>>>>>>>>>>>>SPREMENI 2+1 V  170+1 <<<<<<<<<<<<<<<
-				arr[i][j] = (int) (Math.random()*2+1);
+				arr[i][j] = (int) (Math.random()*170+1);
 
 			}
 		}
 	}
 
 	public static void printArray(int[][] arr) {
-		for (int i = 0; i < arr.length; i++) {
+		System.out.println("xxxxxxxxxxxxxxxxx");
+		System.out.println("x Izpis Tabele  x");
+		System.out.println("xxxxxxxxxxxxxxxxx");
+		System.out.println("\n");
+		
+		for (int i = 0; i < arr.length; i++) {			
 			for (int j = 0; j < arr[i].length; j++) {
 
 				System.out.print(arr[i][j]+" ");
