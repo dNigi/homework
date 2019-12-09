@@ -23,20 +23,22 @@ public class Tree {
 		
 		for (int i = 0; i <= visina; i++) {
 			
-			
+			//visina -> 0 odmik *
 			for (int j = visina; j > i; j--) {
 				System.out.print(" ");
 			}
 			
+			//Trikotnik /|
 			for (int j = 0; j <= i; j++) {
 				System.out.print("*");
 			}
 			
+			//Trikotnik |\
 			for (int j = 0; j < i; j++) {
 				System.out.print("*");
 			}
-			
-			Thread.sleep(220);			
+			//newLine
+			Thread.sleep(100);			
 			System.out.println("");
 			
 		}		
@@ -44,10 +46,11 @@ public class Tree {
 		for (int i = 0; i < 2; i++) {
 			
 			for (int j = 0; j < visina-1; j++) {
-				System.out.print(" ");
+				System.out.print(" ");					
 			}
-			
+				
 			System.out.println("***");
+			Thread.sleep(120);	
 
 		}
 		
