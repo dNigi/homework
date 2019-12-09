@@ -12,7 +12,9 @@ public class Naloga16 {
 		Scanner sc = new Scanner(System.in);
 
 		// >>>>>>>>>>>>>SPREMENI V SCANNER NEWLINE <<<<<<<<<<<<<<<
+		System.out.println("Vnesi stevilo vrstic");		
 		int vnos1 = sc.nextInt();
+		System.out.println("Vnesi stevilo stolpov");
 		int vnos2  = sc.nextInt();		
 
 		int[][] arr = new int[vnos1][vnos2];
