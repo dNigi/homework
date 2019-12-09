@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Naloga16 {	
 
+	//addCommit
 	//Program naj sešteje in izpiše vrednost posameznih vrstic tabele.
 	//Program naj sešteje in izpiše vrednost posameznih stolpcev tabele.
 
