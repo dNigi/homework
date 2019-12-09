@@ -78,6 +78,7 @@ public class Naloga16 {
 	
 	public static void sestejStolpe(int[][]arr) {
 		
+		//gre vedno v arr[0](stolp)
 		for (int i = 0; i < arr[0].length; i++) {
 			
 			//RESET
