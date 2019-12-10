@@ -8,7 +8,14 @@ public class HanoiTowers {
 		char pomozniStol = 'b';
 		char zadnjiStolp = 'c';
 		
+		premik(stolp1,zadnjiStolp);
+		
+			
 
 	}	
+	
+	public static void premik(char x, char y) {
+		System.out.println("premik iz "+x+" na "+ y);
+	}
 
 }
