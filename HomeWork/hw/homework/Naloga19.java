@@ -33,15 +33,10 @@ public class Naloga19 {
 		}
 		return tab;		
 	}	
-	public static void izpisiTabelo(int[] tab) {
-
-		//Counter steje stevilo integerjev znotraj arraya, tab.length-1 dobi dolzino
-		//(counter = 4, int.length-1 = 4  ---> ne izpisi vejice
-		int counter = 0;
+	public static void izpisiTabelo(int[] tab) {		
 		
-		for (int i = 0; i < tab.length; i++) {
-			counter++;
-			if(counter <= tab.length-1) {
+		for (int i = 0; i < tab.length; i++) {			
+			if( i <= tab.length-1) {
 				System.out.print(tab[i] + ", ");				
 			}
 			else {
