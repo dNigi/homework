@@ -4,15 +4,24 @@ public class Naloga19 {
 
 	public static void main(String[] args) {
 
-		int[] tabela = new int[5];
-		int[] drugaTabela = new int[5];
 
-		tabela = napolniTabelo(tabela.length, 22);
-		drugaTabela = napolniTabelo(drugaTabela.length, 32);
+		int[] tabela = new int[155];
+		int[] drugaTabela = new int[17];
+		int[] tabela3 = new int[5];
+		int[] tabela4 = new int[3];
+
+		tabela = napolniTabelo(tabela.length, 200);
+		drugaTabela = napolniTabelo(drugaTabela.length, 10 );
+		tabela3 = napolniTabelo(tabela3.length, 17);
+		tabela4 = napolniTabelo(tabela4.length, 5);
 
 		izpisiTabelo(tabela);
 		System.out.println("");
 		izpisiTabelo(drugaTabela);
+		System.out.println("");
+		izpisiTabelo(tabela3);
+		System.out.println("");
+		izpisiTabelo(tabela4);
 
 	}
 
@@ -22,16 +31,15 @@ public class Naloga19 {
 		for(int i = 0; i < tab.length; i ++) {
 			tab[i] = (int) (Math.random() * razpon+1);
 		}
-
 		return tab;		
 	}	
 	public static void izpisiTabelo(int[] tab) {
 
 		//Counter steje stevilo integerjev znotraj arraya, tab.length-1 dobi dolzino
 		//(counter = 4, int.length-1 = 4  ---> ne izpisi vejice
-		int counter = 0;	
+		int counter = 0;
+		
 		for (int i = 0; i < tab.length; i++) {
-
 			counter++;
 			if(counter <= tab.length-1) {
 				System.out.print(tab[i] + ", ");				
@@ -42,7 +50,7 @@ public class Naloga19 {
 		}
 
 		//Preverjanje z obicnim forom:
-		System.out.println("\tdebug for:");
+		System.out.print("Preverjanje:\n");
 		for (int i = 0; i < tab.length; i++) {
 			System.out.print(tab[i]+" ");			
 		}
