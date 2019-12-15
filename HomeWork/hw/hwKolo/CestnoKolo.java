@@ -15,11 +15,11 @@ public class CestnoKolo extends Kolo {
 
 	public CestnoKolo(String barva, int maxHitrost) {
 		super(barva, maxHitrost);		
-		this.MAX_STEVILO_PRESTAV = 18;		
+		this.MAX_STEVILO_PRESTAV = 6;		
 	}
 
-	
-	
+
+
 	public int getPrestava(){
 		return this.prestava;
 	}
@@ -67,6 +67,18 @@ public class CestnoKolo extends Kolo {
 	private boolean lahkoPrestaviDol() {		
 		int novaPrestava = this.prestava-1;		
 		return novaPrestava >= 1;		
+
+	}
+
+
+	public void accelSim() {		
+		for (int i = 0; i < prestava; i++) {
+			for (int j = 0; j < 3; j++) {
+				pospesi();
+			}
+			prestavaGor();
+		}
+
 
 	}
 

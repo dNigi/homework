@@ -2,25 +2,16 @@ package hwKolo;
 
 public class Main {
 
-	public static void main(String[] args) {	
-
-		int steviloPrestav = 5;
+	public static void main(String[] args) {
 		
-		CestnoKolo c1 = new CestnoKolo("rdece", 70, steviloPrestav);
+		CestnoKolo c1 = new CestnoKolo("rdece", 70, 3);
 
 		System.out.println();
 		c1.izpisiVseLasnosti();
 		
-		for (int i = 0; i < steviloPrestav; i++) {			
-			for (int j = 0; j < 3; j++) {
-				c1.pospesi();				
-			}	
-			c1.prestavaGor();
-			System.out.println("Prestava: "+ c1.getPrestava());
-			System.out.println(" "+c1.hitrost);
-		}
+		c1.accelSim();
 		
-		System.out.println();
+		System.out.println();	
 		c1.izpisiVseLasnosti();
 
 
