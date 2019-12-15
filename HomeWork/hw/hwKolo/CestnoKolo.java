@@ -72,8 +72,6 @@ public class CestnoKolo extends Kolo {
 			}
 			prestavaGor();
 		}
-
-
 	}
 
 	protected void izpisiVseLasnosti() {
