@@ -18,13 +18,6 @@ public class CestnoKolo extends Kolo {
 		this.MAX_STEVILO_PRESTAV = 6;		
 	}
 
-
-
-	public int getPrestava(){
-		return this.prestava;
-	}
-
-
 	// >>>> METODE <<<<
 	public void pospesi() {		
 		if(this.lahkoPospesi()) {
@@ -71,6 +64,7 @@ public class CestnoKolo extends Kolo {
 	}
 
 
+	//Metoda ki simulira pospesek
 	public void accelSim() {		
 		for (int i = 0; i < prestava; i++) {
 			for (int j = 0; j < 3; j++) {
