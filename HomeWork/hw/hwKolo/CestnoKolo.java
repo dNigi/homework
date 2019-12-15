@@ -18,6 +18,11 @@ public class CestnoKolo extends Kolo {
 		this.MAX_STEVILO_PRESTAV = 18;		
 	}
 
+	
+	
+	public int getPrestava(){
+		return this.prestava;
+	}
 
 
 	// >>>> METODE <<<<
@@ -57,8 +62,6 @@ public class CestnoKolo extends Kolo {
 			this.prestava--;
 		}		
 	}
-
-
 
 
 	private boolean lahkoPrestaviDol() {		
