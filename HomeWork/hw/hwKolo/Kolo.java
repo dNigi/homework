@@ -2,7 +2,7 @@ package hwKolo;
 
 
 public class Kolo {
-	private String barva;
+	protected String barva;
 	protected int hitrost = 0; 
 	protected final int MAX_HITROST;
 	
@@ -25,7 +25,7 @@ public class Kolo {
 	public void zaviraj() {
 		if(this.hitrost > 0) {
 			this.hitrost--;
-		}
+		}		
 	}
 	
 	public void pospesi() {
@@ -44,7 +44,7 @@ public class Kolo {
 		return false;
 	}
 	
-	public void izpisiVseLasnosti() {
+	protected void izpisiVseLasnosti() {
 		System.out.println("Barva kolesa: " + this.barva);
 		System.out.println("Trenutna hitrost: " + this.hitrost);
 		System.out.println("Maksimalna hitrost: " + this.MAX_HITROST);
