@@ -3,7 +3,7 @@ package hwKolo;
 
 public class Kolo {
 	private String barva;
-	protected int hitrost = 0;
+	protected int hitrost = 0; 
 	protected final int MAX_HITROST;
 	
 	
