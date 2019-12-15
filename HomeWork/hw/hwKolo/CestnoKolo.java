@@ -1,69 +1,77 @@
 package hwKolo;
 
-
 public class CestnoKolo extends Kolo {
 
+	// >>>> ATRIBUTI <<<<
 	private int prestava = 1;
 	private final int MAX_STEVILO_PRESTAV;
-	
+
+
+	// >>>> KONSTRUKTORJI <<<<	
 	public CestnoKolo(String barva, int maxHitrost, int maxPrestav) {
-		super(barva, maxHitrost);
-		
+		super(barva, maxHitrost);		
 		this.MAX_STEVILO_PRESTAV = maxPrestav;
 	}
 
-	public void pospesi() {
+	public CestnoKolo(String barva, int maxHitrost) {
+		super(barva, maxHitrost);		
+		this.MAX_STEVILO_PRESTAV = 18;		
+	}
+
+
+
+	// >>>> METODE <<<<
+	public void pospesi() {		
 		if(this.lahkoPospesi()) {
 			super.hitrost += this.prestava;
 		}
 	}
-	
-	private boolean lahkoPospesi() {
-		int novaHitrost = super.hitrost + this.prestava;
-		
-		if(novaHitrost <= super.MAX_HITROST) {
-			return true;
-		}
-		
-		return false;
+
+	private boolean lahkoPospesi() {		
+		int novaHitrost = super.hitrost+ this.prestava;		
+		return novaHitrost <= super.MAX_HITROST;			
 	}
-	
+
 	public void prestavaGor() {		
-		if(this.lahkoPrestavi()) {
-			this.prestava++;
-		}				
+		if(this.lahkoPrestaviGor()) 
+			this.prestava++;	
+
 	}
-	
-	private boolean lahkoPrestavi() {		
-		int novaPrestava = this.prestava+1;
-		
+
+	private boolean lahkoPrestaviGor() {		
+		int novaPrestava = this.prestava+1;		
 		return novaPrestava <= this.MAX_STEVILO_PRESTAV;		
 	}
 
-	
-	public void pospesis() {
-		
-		if(lahkoPospesis()) {
-			this.hitrost += this.prestava;
+
+	//=>  SUPER AL THIS?
+	public void zaviraj() {		
+		if(this.hitrost > 0) {
+			this.hitrost--;
 		}
 	}
-	
-	private boolean lahkoPospesis() {
-		
-		int novaHitrost = this.hitrost+1;
-		
-		return novaHitrost <= MAX_HITROST;
-		
-		
+
+	public void prestavaDol() {
+
+		if(this.lahkoPrestaviDol()) {
+			this.prestava--;
+		}		
 	}
-	
-	
+
+
+
+
+	private boolean lahkoPrestaviDol() {		
+		int novaPrestava = this.prestava-1;		
+		return novaPrestava >= 1;		
+
+	}
 
 	protected void izpisiVseLasnosti() {
 		System.out.println("Barva kolesa: " + this.barva);
 		System.out.println("Trenutna hitrost: " + this.hitrost);
 		System.out.println("Maksimalna hitrost: " + this.MAX_HITROST);
-		System.out.println("\tTrenutna prestava: "+ this.prestava);
-		System.out.println(" \tMaksimalna prestava: " + MAX_STEVILO_PRESTAV);
+		System.out.println("Trenutna prestava: "+ this.prestava);
+		System.out.println("Maksimalna prestava: " + this.MAX_STEVILO_PRESTAV);
 	}
 }
